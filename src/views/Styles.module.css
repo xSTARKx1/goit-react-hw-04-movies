@@ -1,0 +1,47 @@
+.title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.trendsListItem {
+  margin-bottom: 6px;
+}
+
+.trendsListItem:last-child {
+  margin-bottom: 0;
+}
+
+.goBackButton {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  margin: 0 0 16px 16px;
+  padding: 4px 22px;
+}
+
+.cardOfMovie {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.searchList {
+  margin-bottom: 6px;
+}
+
+.searchList:last-child {
+  margin-bottom: 0;
+}
+
+.searchButton {
+  padding: 5px 10px;
+  border: 1px solid #cfcfcf;
+  outline: none;
+  cursor: pointer;
+}
+
+.formOfSearch {
+  width: 400px;
+  outline: none;
+  padding: 5px 0;
+  border: 1px solid #cfcfcf;
+}

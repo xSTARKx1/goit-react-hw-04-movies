@@ -1,0 +1,25 @@
+.poster {
+  display: inline;
+}
+
+.filmsInfo {
+  margin-left: 30px;
+}
+
+.listOfGenres {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.listOfGenresItem {
+  margin-right: 10px;
+}
+
+.listOfGenresItem:last-child {
+  margin-right: 0;
+}
+
+.filmTitle {
+  margin-top: 50px;
+}

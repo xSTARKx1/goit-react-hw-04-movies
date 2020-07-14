@@ -1,0 +1,17 @@
+.wrapper {
+  border: 1px solid #b3b3b3;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.informationItem {
+  margin-bottom: 8px;
+}
+
+.informationItem:last-child {
+  margin-bottom: 0;
+}
