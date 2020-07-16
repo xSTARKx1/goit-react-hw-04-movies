@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReviewsItem from '../ReviewsItem';
 import Api from '../../service/api';
 
 class Reviews extends Component {
@@ -22,8 +23,7 @@ class Reviews extends Component {
           <ul>
             {reviews.map(({ id, author, content }) => (
               <li key={id}>
-                <h3>Author: {author}</h3>
-                <p>{content}</p>
+                <ReviewsItem author={author} content={content} />
               </li>
             ))}
           </ul>

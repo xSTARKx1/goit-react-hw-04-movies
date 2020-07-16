@@ -21,4 +21,16 @@ const getFilmOnQuery = query => {
   );
 };
 
-export default { getCast, getReview, getFilm, getFilmOnQuery };
+const getTrendsOfFilms = () => {
+  return axios.get(
+    `https://api.themoviedb.org/3/trending/all/day?api_key=${apiKey}`,
+  );
+};
+
+export default {
+  getCast,
+  getReview,
+  getFilm,
+  getFilmOnQuery,
+  getTrendsOfFilms,
+};

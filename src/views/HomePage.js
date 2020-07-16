@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Axios from 'axios';
 import { Link } from 'react-router-dom';
+import Api from '../service/api';
 import styles from './Styles.module.css';
 
 class HomePage extends Component {
@@ -9,11 +9,9 @@ class HomePage extends Component {
   };
 
   async componentDidMount() {
-    const response = await Axios.get(
-      'https://api.themoviedb.org/3/trending/all/day?api_key=1747a0eecc2a2bb6cec6e6e5c8420ddf',
+    Api.getTrendsOfFilms().then(res =>
+      this.setState({ films: res.data.results }),
     );
-
-    this.setState({ films: response.data.results });
   }
 
   render() {
